@@ -18,7 +18,9 @@ jobs:
       - checkout
       - run: echo "Running tests"
       - run: yarn
-      - run: yarn test
+      - run:
+          name: Run tests
+          command: node --expose-gc ./node_modules/.bin/jest --runInBand --logHeapUsage
 
 # Orchestrate our job run sequence
 workflows:
