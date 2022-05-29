@@ -2,7 +2,7 @@ import React from "react";
 import { shallow } from "enzyme";
 import { findJSXByAttr } from "__test__/testUtils";
 
-import Layout from "src/components/Layout";
+import Layout from "src/Components/Layout";
 
 const setup = (props = {}, state = null) => {
   return shallow(<Layout {...props} />);
