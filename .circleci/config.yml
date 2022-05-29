@@ -9,9 +9,18 @@ jobs:
     steps:
       - checkout
       - run: echo "build project"
-      - run: yarn 
+      - run: yarn
       - run: yarn build
-
+  test:
+    docker:
+      - image: cimg/node:16.4.0
+    steps:
+      - checkout
+      - run: echo "Running tests"
+      - run: yarn
+      - run:
+          name: Run tests
+          command: node --expose-gc ./node_modules/.bin/jest --runInBand --logHeapUsage
 
 # Orchestrate our job run sequence
 workflows:
@@ -19,3 +28,4 @@ workflows:
   build_and_test:
     jobs:
       - build
+      - test
