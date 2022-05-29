@@ -1,0 +1,8 @@
+{
+  "includeHidden": false,
+  "sourceMap": false,
+  "runOnce": false,
+  "enableJs": true,
+  "watchFolder": "src/less",
+  "outputFolder": "src/styles"
+}
