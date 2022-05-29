@@ -1,3 +1,38 @@
 body {
+  font-family: "Spline Sans Mono", monospace;
   background: #f4f4f4;
+}
+.primary-text {
+  color: #40c36c;
+}
+.btn,
+.primary-btn {
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.primary-btn {
+  background: #ff2828;
+  color: black;
+}
+ul#menu {
+  list-style: none;
+  background-color: #ffffff;
+}
+ul#menu li {
+  padding: 10px 0;
+}
+ul#menu li a {
+  color: #40c36c;
+  text-decoration: none;
+}
+ul#menu li a:hover {
+  color: #000;
+}
+h1 {
+  border: 1px solid #000;
+}
+.bordered {
+  border: 1px solid #000;
 }
