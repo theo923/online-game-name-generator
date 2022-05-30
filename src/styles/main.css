@@ -1,38 +1,86 @@
 body {
-  font-family: "Spline Sans Mono", monospace;
+  font-family: "Caesar Dressing", cursive;
+  font-weight: 500;
   background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .primary-text {
   color: #40c36c;
 }
+.primary-text svg {
+  margin: 0 20px;
+}
 .btn,
 .primary-btn {
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: box-shadow 0.5s, left 0.5s, top 0.5s;
   padding: 10px 20px;
   border: 0;
   border-radius: 10px;
   cursor: pointer;
+  box-shadow: 5px 10px #888888;
+}
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .primary-btn {
   background: #ff2828;
   color: black;
 }
-ul#menu {
-  list-style: none;
-  background-color: #ffffff;
+.primary-btn div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-ul#menu li {
-  padding: 10px 0;
+.primary-btn div h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-ul#menu li a {
-  color: #40c36c;
-  text-decoration: none;
+.primary-btn:hover {
+  top: 10px;
+  left: 10px;
+  box-shadow: 0px 0px #888888;
 }
-ul#menu li a:hover {
-  color: #000;
+.radioBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
 }
 h1 {
+  padding: 20px;
   border: 1px solid #000;
+  font-family: "Caesar Dressing", cursive;
+  font-weight: 500;
+}
+h2 {
+  font-family: "Caesar Dressing", cursive;
+  font-weight: 500;
 }
 .bordered {
+  padding: 20px;
   border: 1px solid #000;
+}
+.hide {
+  opacity: 0;
+}
+.absolute {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.relative {
+  position: relative;
+}
+.radioBtn {
+  opacity: 0;
+  transform: scale(3);
 }
