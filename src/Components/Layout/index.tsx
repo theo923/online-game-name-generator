@@ -6,11 +6,12 @@ import {
   GiCrystalWand,
   GiCrossedSwords,
 } from "react-icons/gi";
+import { chinese_name_generator } from "../../utils/generator_chinese";
 
 const Layout = () => {
   const [opt, setOpt] = useState<string>("english");
-  console.log(opt);
-
+  const [name, setName] = useState<string>("");
+  
   const handleChange = (e: React.FormEvent<HTMLDivElement>) => {
     const target = e.target as HTMLTextAreaElement;
     setOpt((_prev) => target.value);
@@ -61,7 +62,11 @@ const Layout = () => {
           <h2>Cantonese</h2>
         </span>
       </div>
-      <button className="primary-btn">
+      <p>{name}</p>
+      <button
+        className="primary-btn"
+        onClick={() => setName(chinese_name_generator(true, true, false))}
+      >
         <div>
           <h2 style={{ marginRight: "10px" }}>
             <GiCrossedSwords size="20px" />

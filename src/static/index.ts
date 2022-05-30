@@ -1,19 +1,25 @@
-export const POOL1 = [""];
-export const PARENTHESIS = {
-  0: ["0o", "o0"],
-  1: ["Oo", "oO"],
-  2: ["oO", "Oo"],
-  3: ["Xx", "xX"],
-  4: ["xx", "xx"],
-  5: ["Zz", "zZ"],
-  6: ["乂", "乂"],
-  7: ["卍", "卍"],
-  8: ["卐", "卐"],
-};
+export const PARENTHESIS = [
+  ["0o", "o0"],
+  ["Oo", "oO"],
+  ["oO", "Oo"],
+  ["Xx", "xX"],
+  ["xx", "xx"],
+  ["Zz", "zZ"],
+  ["乂", "乂"],
+  ["卍", "卍"],
+  ["卐", "卐"],
+  ["★", "★"],
+];
 
-export const CONNECTOR = ["乂", "之", "X", "x"];
+export const CONNECTOR = [
+  "乂",
+  "之",
+  "X",
+  "x",
+  // "的"
+];
 
-export const FIRST = [
+export const WORDS = [
   "烈",
   "影",
   "魂",
@@ -61,6 +67,17 @@ export const FIRST = [
   "煉獄",
   "醉愛",
   "EX",
+  "聖",
+  "騎士",
+  "皇",
+  "霸氣",
+  "淘氣",
+  "路西法",
+  "絕影",
+  "惡魔",
+  "幻影",
+  "月影",
+  "劍聖",
 ];
 
 export const GEOLOCATION = [
